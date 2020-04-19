@@ -6,7 +6,7 @@ import com.pluralsight.repository.SpeakerRepository;
 
 import java.util.List;
 
-public class SpeakerServiceImpl {
+public class SpeakerServiceImpl implements SpeakerService {
     private final SpeakerRepository repository = new HibernateSpeakerRepositoryImpl();
 
     public List<Speaker> findAll() {
