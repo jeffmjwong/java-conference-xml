@@ -6,13 +6,15 @@ import com.pluralsight.repository.SpeakerRepository;
 import java.util.List;
 
 public class SpeakerServiceImpl implements SpeakerService {
-    private SpeakerRepository speakerRepository;
+    private SpeakerRepository repository;
 
-    public void setSpeakerRepository(SpeakerRepository speakerRepository) {
-        this.speakerRepository = speakerRepository;
+    public SpeakerServiceImpl() {}
+
+    public SpeakerServiceImpl(SpeakerRepository repository) {
+        this.repository = repository;
     }
 
     public List<Speaker> findAll() {
-        return speakerRepository.findAll();
+        return repository.findAll();
     }
 }
