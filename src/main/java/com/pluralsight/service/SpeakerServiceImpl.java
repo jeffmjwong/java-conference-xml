@@ -8,13 +8,9 @@ import java.util.List;
 public class SpeakerServiceImpl implements SpeakerService {
     private SpeakerRepository repository;
 
-//    public SpeakerServiceImpl() {}
-//
-//    public SpeakerServiceImpl(SpeakerRepository repository) {
-//        this.repository = repository;
-//    }
+    public SpeakerServiceImpl() {}
 
-    public void setSpeakerRepository(SpeakerRepository repository) {
+    public SpeakerServiceImpl(SpeakerRepository repository) {
         this.repository = repository;
     }
 
